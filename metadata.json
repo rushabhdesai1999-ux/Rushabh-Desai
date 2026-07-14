@@ -1,0 +1,6 @@
+{
+  "name": "Hair Katta Unisex Salon",
+  "description": "Premium luxury unisex salon in Jogeshwari East, Mumbai offering hair styling, beauty, and grooming services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

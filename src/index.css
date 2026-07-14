@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Helvetica Neue', Arial, sans-serif;
+  --font-serif: 'Georgia', serif;
+
+  --color-gold-300: #f2d06b;
+  --color-gold-400: #d4af37;
+  --color-gold-500: #b8860b;
+  
+  --color-charcoal-800: #1a1a1a;
+  --color-charcoal-900: #050505;
+  --color-charcoal-950: #000000;
+}
+
+@layer base {
+  body {
+    @apply bg-[#050505] text-[#f8f8f8] font-sans antialiased overflow-x-hidden;
+  }
+  
+  ::selection {
+    @apply bg-[#d4af37]/30 text-[#f2d06b];
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-shadow-sm {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .gold-gradient {
+    background: linear-gradient(135deg, #d4af37 0%, #f2d06b 50%, #b8860b 100%);
+  }
+  .gold-text {
+    background: linear-gradient(135deg, #d4af37 0%, #f2d06b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .card-hover:hover {
+    border-color: #d4af37;
+    background: rgba(212, 175, 55, 0.05);
+  }
+}
